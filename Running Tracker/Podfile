@@ -1,0 +1,14 @@
+# Uncomment the next line to define a global platform for your project
+  platform :ios, '13.0'
+
+target 'Running Tracker' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  # use_frameworks!
+  # no se usa dynamics frameworks por un error de firmas en ios 13.3.1, 
+  # si se firma con una cuenta de distribuición no hay problemas.
+    use_modular_headers!
+  	
+  # Pods for Running Tracker
+  pod 'RealmSwift', '~> 10.33'
+
+end
